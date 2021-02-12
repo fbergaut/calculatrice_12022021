@@ -1,0 +1,74 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.calculatrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://images.pexels.com/photos/2356087/pexels-photo-2356087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-color: #6f96ad;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.inputField {
+  padding: 2rem;
+}
+
+.writeNumber {
+  /*width: 4rem;*/
+  height: 4.4rem;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.inputField input[type="text"] {
+  padding: 1rem 1.5rem;
+}
+
+.inputField input::placeholder {
+  font-size: 1rem;
+  font-family: Roboto;
+  font-weight: 700;
+  color: white;
+}
+
+.operation {
+  width: 6%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.2rem;
+  font-family: Roboto;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  background: rgba(3, 97, 160, 0.8);
+  cursor: pointer;
+}
