@@ -9,6 +9,7 @@ const divide = document.getElementById("divide");
 const operationChosen = document.querySelector(".operation-chosen");
 const equal = document.querySelector(".equal");
 const result = document.querySelector("#result");
+const clearCalc = document.getElementById("clear");
 
 let chosenOp;
 
@@ -46,4 +47,10 @@ multiply.addEventListener("click", function () {
 divide.addEventListener("click", function () {
   // operationChosen.innerHTML = divide.textContent;
   chosenOp = divide.textContent;
+});
+
+clearCalc.addEventListener("click", function() {
+  input1.value = "";
+  input2.value = "";
+  result.textContent = "";
 });

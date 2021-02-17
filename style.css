@@ -67,7 +67,7 @@ body {
   flex-wrap: wrap;
 }
 
-button, .equal {
+button {
   width: 2rem;
   height: 2rem;
   margin: 0.2rem;
@@ -104,4 +104,14 @@ button:focus {
   margin-top: 1rem;
   font-size: 5rem;
   opacity: 0.5;
+}
+.clear {
+  font-size: 3rem;
+  color: white;
+  margin-left: 45rem;
+  cursor: pointer;
+}
+
+.clear:hover{
+  color: rgba(255, 103, 1, 0.8);
 }
