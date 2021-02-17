@@ -10,25 +10,32 @@
 </head>
 
 <body>
-    <container class="calculatrice">
-        <div id="input-field1" class="inputField">
-            <input type="text" id="number1" class="writeNumber" name="number1" placeholder="0" />
-        </div>
-        <div class="operation">
-            <button id="add">+</button>
-            <button id="subtract">-</button>
-            <button id="multiply">*</button>
-            <button id="divide">/</button>
-        </div>
-        <div class="operation-chosen">+</div>
-        <div id="input-field2" class="inputField">
-            <input type="text" id="number2" class="writeNumber" name="number1" placeholder="0" />
-        </div>
-        <div id="result"></div>
-        <div class="equal" onclick="showResult()">=</div>
-        <!-- <div class="equal" >=</div> -->
-        
-    </container>
+    <div class="container">
+        <section class="calculatrice">
+            <div class="inputField">
+                <input type="text" id="number1" class="writeNumber" name="number1" placeholder="0" />
+            </div>
+            <div class="operation">
+                <button id="add">+</button>
+                <button id="subtract">-</button>
+                <button id="multiply">*</button>
+                <button id="divide">/</button>
+            </div>
+            <!-- <div class="operation-chosen">+</div> -->
+            <div class="inputField">
+                <input type="text" id="number2" class="writeNumber" name="number2" placeholder="0" />
+            </div>
+            
+        </section>
+        <section>
+            <div class="opResult">
+                <button class="equal" onclick="showResult()">=</button>
+                <div id="result" class="result"></div>
+            </div>
+            <!-- <div class="equal" >=</div> -->
+        </section>
+    </div>
+
     <script src="./index.js"></script>
 </body>
 

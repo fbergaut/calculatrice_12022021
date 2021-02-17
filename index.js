@@ -3,17 +3,24 @@ const input2 = document.getElementById("number2");
 
 const add = document.getElementById("add");
 const subtract = document.getElementById("subtract");
+const multiply = document.getElementById("multiply");
+const divide = document.getElementById("divide");
 
 const operationChosen = document.querySelector(".operation-chosen");
-const result = document.querySelector("#result");
 const equal = document.querySelector(".equal");
-let opChoisi;
+const result = document.querySelector("#result");
+
+let chosenOp;
 
 function showResult() {
-  if (opChoisi == "+") {
+  if (chosenOp === "+") {
     result.textContent = Number(input1.value) + Number(input2.value);
-  } else if (opChoisi == "-") {
+  } else if (chosenOp === "-") {
     result.textContent = Number(input1.value) - Number(input2.value);
+  } else if (chosenOp === "*") {
+    result.textContent = Number(input1.value) * Number(input2.value);
+  } else if (chosenOp === "/") {
+    result.textContent = Number(input1.value) / Number(input2.value);
   }
 }
 
@@ -22,11 +29,21 @@ function showResult() {
 // });
 
 add.addEventListener("click", function () {
-  operationChosen.innerHTML = add.textContent;
-  opChoisi = add.textContent;
+  // operationChosen.innerHTML = "Opération choisie " + add.textContent;
+  chosenOp = add.textContent;
 });
 
 subtract.addEventListener("click", function () {
-  operationChosen.innerHTML = subtract.textContent;
-  opChoisi = subtract.textContent;
+  // operationChosen.innerHTML = subtract.textContent;
+  chosenOp = subtract.textContent;
+});
+
+multiply.addEventListener("click", function () {
+  // operationChosen.innerHTML = multiply.textContent;
+  chosenOp = multiply.textContent;
+});
+
+divide.addEventListener("click", function () {
+  // operationChosen.innerHTML = divide.textContent;
+  chosenOp = divide.textContent;
 });
