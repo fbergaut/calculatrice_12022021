@@ -88,6 +88,10 @@ button:focus {
   background: rgba(255, 103, 1, 0.8);
 }
 
+.btn-active {
+  background: rgba(255, 103, 1, 0.8);
+}
+
 .opResult {
   display: flex;
   flex-direction: column;
